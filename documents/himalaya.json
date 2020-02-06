@@ -1,0 +1,109 @@
+[
+  {
+    "provenance": "OpenStreetMap",
+    "elevation": 8848,
+    "longitude": 86.9248308,
+    "latitude": 27.9878675,
+    "name": "Everest",
+    "localized_names": [
+      ["zh","圣母峰"],
+      ["ne","सगरमाथा"],
+      ["en","Mount Everest"]
+    ]
+  },
+  {
+    "provenance": "OpenStreetMap",
+    "elevation": 8586,
+    "longitude": 88.1483408,
+    "latitude": 27.7026008,
+    "name": "Kangchenjunga",
+    "localized_names": [
+      ["ru","Канченджанга"],
+      ["ne","कञ्चनजङ्घा"],
+      ["in","कंचनजंघा"]
+    ]
+  },
+  {
+    "provenance": "OpenStreetMap",
+    "elevation": 8516,
+    "longitude": 86.9326734,
+    "latitude": 27.9616389,
+    "name": "Lhotse",
+    "localized_names": [
+      ["zh","洛子峰"],
+      ["ne","ल्होत्से"],
+      ["en","Mount Lhotse"]
+    ]
+  },
+  {
+    "provenance": "OpenStreetMap",
+    "elevation": 8485,
+    "longitude": 87.0886361,
+    "latitude": 27.8911991,
+    "name": "Makalu",
+    "localized_names": [
+      ["zh","马卡鲁山"],
+      ["ne","मकालु"],
+      ["en","Mount Makalu"]
+    ]
+  },
+  {
+    "provenance": "OpenStreetMap",
+    "elevation": 8027,
+    "longitude": 85.7782824,
+    "latitude": 28.3553668,
+    "name": "Shishapangma",
+    "localized_names": [
+      ["zh","希夏幫馬峰"],
+      ["ne","शिशापाङ्मा"],
+      ["bo","ཤིས་ས་སྤང་མ།"]
+    ]
+  },
+  {
+    "provenance": "OpenStreetMap",
+    "elevation": 8201,
+    "longitude": 86.6596540,
+    "latitude": 28.0967613,
+    "name": "Cho Oyu",
+    "localized_names": [
+      ["zh","卓奧有山"],
+      ["ne","चोयु"],
+      ["bo","ཇོ་བོ་དབུ་ཡ"]
+    ]
+  },
+  {
+    "provenance": "OpenStreetMap",
+    "elevation": 8167,
+    "longitude": 83.4887249,
+    "latitude": 28.6981361,
+    "name": "Dhaulagiri",
+    "localized_names": [
+      ["ne","धौलागिरी"],
+      ["ru","Джаулагири"]
+    ]
+  },
+  {
+    "provenance": "OpenStreetMap",
+    "elevation": 8163,
+    "longitude": 84.5597284,
+    "latitude": 28.5499829,
+    "name": "Manaslu",
+    "localized_names": [
+      ["cs","Manáslu"],
+      ["ne","मनास्लु"],
+      ["ru","Манаслу"]
+    ]
+  },
+  {
+    "provenance": "OpenStreetMap",
+    "elevation": 8091,
+    "longitude": 83.8270789,
+    "latitude": 28.5962553,
+    "name": "Annapurna",
+    "localized_names": [
+      ["zh","安娜普纳"],
+      ["ne","अन्नपूर्णा"],
+      ["en","Annapurna I"]
+    ]
+  }
+]

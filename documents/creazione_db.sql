@@ -1,0 +1,57 @@
+CREATE TABLE User (
+	Username VARCHAR(16),
+	Password VARCHAR(64),
+	Email VARCHAR(32),
+	Nome VARCHAR(16),
+	Cognome VARCHAR(16),
+	Admin BOOLEAN,
+	PRIMARY KEY(Username)
+);
+
+CREATE TABLE Campagna(
+	ID INTEGER AUTO_INCREMENT,
+	Nome VARCHAR(32),
+	Stato INTEGER,
+	Data_inizio DATE,
+	Data_fine DATE,
+	PRIMARY KEY(ID)
+);
+
+CREATE TABLE Picchi(
+	ID INTEGER AUTO_INCREMENT,
+	Provenienza VARCHAR(32),
+	Elevazione DOUBLE(4,2),
+	Longitudine DECIMAL(11,8) NOT NULL,
+	Latitudine DECIMAL(10,8) NOT NULL,
+	Nome VARCHAR(64),
+	Nomi_localizzati TEXT,
+	Campagna INTEGER,
+	Da_annotare BOOLEAN,
+	PRIMARY KEY(ID),
+	FOREIGN KEY (Campagna) REFERENCES Campagna(ID) ON UPDATE CASCADE ON DELETE NO ACTION
+);
+
+CREATE TABLE Annotazione(
+	ID INTEGER AUTO_INCREMENT,
+	Data_creazione DATE,
+	Validita BOOLEAN,
+	Elevazione DOUBLE(4,2),
+	Nome VARCHAR(32),
+	Nomi_localizzati TEXT,
+	Stato BOOLEAN,
+	User VARCHAR(16),
+	Id_picco INTEGER,
+	PRIMARY KEY(ID),
+	FOREIGN KEY (User) REFERENCES User(Username) ON UPDATE CASCADE ON DELETE NO ACTION,
+	FOREIGN KEY (Id_picco) REFERENCES Picchi(ID) ON UPDATE CASCADE ON DELETE NO ACTION
+);
+
+CREATE TABLE Subscription(
+	User VARCHAR(16),
+	Campagna INTEGER,
+	FOREIGN KEY (Campagna) REFERENCES Campagna(ID) ON UPDATE CASCADE,
+	FOREIGN KEY (User) REFERENCES User(Username) ON UPDATE CASCADE
+);
+
+ALTER DATABASE project CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+ALTER TABLE Picchi CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;

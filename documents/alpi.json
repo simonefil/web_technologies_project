@@ -1,0 +1,41 @@
+[
+  {
+    "provenance": "Italia",
+    "elevation": 4808,
+    "longitude": 6.8564201,
+    "latitude": 45.8326364,
+    "name": "Monte Bianco",
+    "localized_names": [
+      ["it","Monte Cervino"],
+      ["fr","Mont Blanc"]
+    ]
+  },
+  {
+    "provenance": "Italia",
+    "elevation": 4478,
+    "longitude": 7.655091,
+    "latitude": 45.978564,
+    "name": "Monte Cervino",
+    "localized_names": [
+      ["it","Monte Cervino"]
+      ]
+  },
+  {
+    "provenance": "Italia",
+    "elevation": 4637,
+    "longitude": 7.883333,
+    "latitude": 45.916667,
+    "name": "Monte Rosa",
+    "localized_names": [
+      ["it","Monte Rosa"]
+    ]
+  },
+  {
+    "provenance": "Italia",
+    "elevation": 4061,
+    "longitude": 7.2666656,
+    "latitude": 45.533331,
+    "name": "Gran Paradiso",
+    "localized_names": null
+  }
+]

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">
+    <title>Test Map</title>
+     <script src="https://cesiumjs.org/releases/1.50/Build/Cesium/Cesium.js"></script>
+     <link href="https://cesiumjs.org/releases/1.50/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
+     <link rel="stylesheet" type="text/css" href="css/utils.css">
+</head>
+<body>
+<br><br>
+<table width="100%">
+    <tr>
+        <td width="20%">&nbsp;</td>
+        <td width="35%">&nbsp;</td>
+        <td width="20%">&nbsp;</td>
+        <td width="25%" rowspan="2" class="FontMedioGrassetto"><img style="cursor: pointer;" border="0"  src="/img/back.png" width="50px" height="50px" onclick="backToCampaigns();"><div style="align: center">BACK</div></td>
+    </tr>
+
+    <tr>
+        <td align="center" colspan="3">
+            <div id="map" align="center" style="width: 700px; height:400px;"></div>
+            <div id="3d" style="width: 700px; height:400px; display: none;"></div>
+        </td>
+        <td></td>
+    </tr>
+    <tr><td colspan="4">&nbsp;</td></tr>
+    <tr><td colspan="4">&nbsp;</td></tr>
+    <tr><td colspan="4">&nbsp;</td></tr>
+    <tr>
+        <td>&nbsp;</td>
+        <td align="center">
+            <input type="button" value="2D/3D" onclick="switchView()"  class="Button">
+            <td></td>
+        </td>
+        <td>&nbsp;</td>
+        <td width="25%">&nbsp;</td>
+    </tr>
+</table>
+
+<script src="js/3dmap.js" type="text/javascript"></script>
+<script src="js/maps.js" type="text/javascript"></script>
+<script src="js/switch.js" type="text/javascript"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAal0-6dkRN5f-OofqdFzgpd5eQi3frCl8&callback=initMap"
+        async defer></script>
+</body>
+</html>
